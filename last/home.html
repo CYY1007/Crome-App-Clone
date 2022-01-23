@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Cloned Momentum</title>
+  </head>
+  <body>
+    <div class="bgimg">
+      <div id="logindiv" class="conceal">
+        <form id="login">
+          <h2>Hello, what's your name?</h2>
+          <input type="text" id="login-text" required />
+          <input type="submit" value="login!" />
+        </form>
+      </div>
+      <div id="greetingdiv" class="conceal">
+        <h2 id="clock" class="conceal"></h2>
+        <h2 id="greeting" class="conceal"></h2>
+        <form id="go-update" class="conceal">
+          <input type="submit" id="update-submit" value="update your name!" />
+        </form>
+        <form id="update-name" class="conceal">
+          <h2>What name do you want to change to?</h2>
+          <input id="update-text" required />
+          <input type="submit" value="update!" />
+        </form>
+      </div>
+      <div id="tododiv" class="conceal">
+        <ul id="todo-list"></ul>
+      </div>
+      <div id="maketododiv">
+        <form id="go-make-todo" class="conceal">
+          <div>No todos yet</div>
+          <div>Add a todo to get started</div>
+          <input type="button" value="New Todo" />
+        </form>
+        <form id="make-todo" class="conceal">
+          <input type="text" placeholder="New todo" />
+          <input type="submit" value="Add Todo!" />
+        </form>
+        <input
+          id="fill-todo-button"
+          type="button"
+          value="todo"
+          class="conceal"
+        />
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <script src="src/clock.js"></script>
+      <script src="src/todo.js"></script>
+      <script src="src/background.js"></script>
+      <script src="src/weather.js"></script>
+      <script src="src/greeting.js"></script>
+    </div>
+  </body>
+</html>

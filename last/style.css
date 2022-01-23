@@ -1,0 +1,66 @@
+.conceal {
+  display: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.bgimg {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    ". . weather"
+    ". greetingdiv tododiv"
+    ". . maketododiv";
+}
+
+#weather {
+  grid-area: weather;
+}
+
+#weather span {
+  color: white;
+}
+
+#greetingdiv {
+  grid-area: greetingdiv;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+
+#tododiv {
+  grid-area: tododiv;
+}
+
+#maketododiv {
+  grid-area: maketododiv;
+}
+
+#clock {
+  color: white;
+  font-size: 50px;
+}
+
+#greeting {
+  color: white;
+  font-size: 20px;
+}
+
+#go-make-todo div {
+  color: white;
+}
+
+#update-name h2 {
+  color: white;
+}
+
+#login h2 {
+  color: white;
+}
